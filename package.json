@@ -2,9 +2,9 @@
   "name": "node-blog",
   "version": "1.0.0",
   "description": "A practical Node.js project for building the back-end of a blog website. This project covers RESTful API development, CRUD operations, routing, middleware, and database integration — designed to strengthen back-end development skills using modern Node.js practices.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node --watch index.js",
+    "start": "node --watch src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/Rizone2k/node-blog#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
+    "morgan": "^1.10.0"
   }
 }
