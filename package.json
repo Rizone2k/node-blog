@@ -1,0 +1,28 @@
+{
+  "name": "node-blog",
+  "version": "1.0.0",
+  "description": "A practical Node.js project for building the back-end of a blog website. This project covers RESTful API development, CRUD operations, routing, middleware, and database integration — designed to strengthen back-end development skills using modern Node.js practices.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rizone2k/node-blog.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "ExpressJS",
+    "JS"
+  ],
+  "author": "Rizone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rizone2k/node-blog/issues"
+  },
+  "homepage": "https://github.com/Rizone2k/node-blog#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
