@@ -1,0 +1,9 @@
+@use 'variables' as var;
+
+.container{
+    background-color: var.$aqua-color;
+}
+
+h1{
+    color: var.$red-color;
+}

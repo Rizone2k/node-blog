@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node --watch src/index.js",
+    "watch": "sass src/resources/scss:src/public/css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,8 +24,10 @@
   },
   "homepage": "https://github.com/Rizone2k/node-blog#readme",
   "dependencies": {
+    "bootstrap": "^5.3.7",
     "express": "^5.1.0",
     "express-handlebars": "^8.0.3",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "sass": "^1.89.2"
   }
 }
