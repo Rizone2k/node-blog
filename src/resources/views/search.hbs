@@ -1,0 +1,32 @@
+<form method="POST" action="/news">
+  <div class="form-group">
+    <label for="fullname-input">Full name</label>
+    <input
+      name="fullname"
+      type="text"
+      class="form-control"
+      id="fullname-input"
+      placeholder="Fullname..."
+    />
+    <label for="age-input">Age</label>
+    <input
+      name="age"
+      type="number"
+      class="form-control"
+      id="age-input"
+      placeholder="Your age..."
+    />
+    <label for="search-input">Search</label>
+    <input
+      name="q"
+      type="text"
+      class="form-control"
+      id="search-input"
+      aria-describedby="searchHelp"
+      placeholder="Search anything..."
+    />
+    <small id="searchHelp" class="form-text text-muted">We'll never share your
+      search with anyone else.</small>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

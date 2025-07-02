@@ -1,9 +1,9 @@
-@use 'variables' as var;
+@use "variables" as var;
 
-.container{
-    background-color: var.$aqua-color;
+.container {
+  background-color: var.$violet-color;
 }
 
-h1{
-    color: var.$red-color;
+h1 {
+  color: var.$red-color;
 }
