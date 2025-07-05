@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row py-3">
+    <h1>Oke</h1>
+    {{!-- {{#each course}} --}}
+    <div class="col-12 col-md-6 col-lg-3 py-2">
+      <div class="card" style="width: 18rem;">
+        <img src="{{course.image}}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{course.name}}</h5>
+          <p class="card-text">{{course.description}}</p>
+          <a href="/course/{{course.slug}}" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    {{!-- {{/each}} --}}
+  </div>
+</div>

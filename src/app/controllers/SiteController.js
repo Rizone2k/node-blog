@@ -2,13 +2,14 @@ const Course = require("../../models/Courses");
 
 class SiteController {
   // [GET] /
-  async index(req, res) {
+  async index(req, res, next) {
     try {
-      const courses = await Course.find({});
-      res.json(courses);
-      // res.render("home", { courses });
-    } catch (err) {
-      res.status(400).json({ error: "error!" });
+      let courses = await Course.find({}).lean();
+      res.render("home", {
+        courses,
+      });
+    } catch (error) {
+      next(error);
     }
   }
 
