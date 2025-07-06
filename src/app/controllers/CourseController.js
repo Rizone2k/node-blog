@@ -1,8 +1,22 @@
 const Course = require("../../models/Courses");
-const { mongooseToObject } = require("../../util/mongoose");
+const { mongooseToObject, toSlug } = require("../../util/mongoose");
 
 class CourseController {
-  // [GET] /course
+  create(req, res, next) {
+    res.render("courses/create");
+  }
+  async storage(req, res, next) {
+    try {
+      const data = req.body;
+      data.slug = toSlug(data.name);
+      await Course.create([data]);
+      console.log("Created!!!");
+      res.redirect("/");
+    } catch (error) {
+      next(error);
+    }
+  }
+
   async index(req, res, next) {
     try {
       let course = await Course.findOne({ slug: req.params.slug }).exec();
